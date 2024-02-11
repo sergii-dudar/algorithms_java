@@ -58,6 +58,14 @@ class Solution {
 
     public ListNode mergeTwoLists(final ListNode listNode1, final ListNode listNode2) {
 
+        if (listNode1 == null && listNode2 == null) {
+            return new ListNode();
+        }
+
+        if (listNode1 == null || listNode2 == null) {
+            return listNode1 == null ? listNode2 : listNode1;
+        }
+
         ListNode workNode1 = listNode1;
         ListNode workNode2 = listNode2;
 
