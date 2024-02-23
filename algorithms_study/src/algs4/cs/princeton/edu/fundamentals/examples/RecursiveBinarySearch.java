@@ -10,8 +10,8 @@ public class RecursiveBinarySearch {
         return rank(key, a, 0, a.length -  1);
     }
 
-    public static int rank(int key, int[] a, int lo, int hi) { // Index of key in a[], if present, is not smaller than lo
-// and not larger than hi.
+    public static int rank(int key, int[] a, int lo, int hi) {
+        // Index of key in a[], if present, is not smaller than lo and not larger than hi.
         if (lo > hi) return -1;
         int mid = lo + (hi - lo) / 2;
         if (key < a[mid]) return rank(key, a, lo, mid - 1);
