@@ -1,0 +1,3 @@
+[out to file]: classes % java -cp . algs4.cs.princeton.edu.fundamentals.RandomSeq 1000 100.0 200.0 > data.txt
+[in from file] classes % java -cp . algs4.cs.princeton.edu.fundamentals.Average < data.txt
+[pipe, out of RandomSeq send as in to Average] classes % java -cp . algs4.cs.princeton.edu.fundamentals.RandomSeq 1000 100.0 200.0 | java -cp . algs4.cs.princeton.edu.fundamentals.Average
