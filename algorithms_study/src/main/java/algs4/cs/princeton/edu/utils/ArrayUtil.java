@@ -9,4 +9,8 @@ public class ArrayUtil {
     public static String[] defaultIfEmpty(String[] args, String... def) {
         return ArrayUtils.isEmpty(args) ? def : args;
     }
+
+    public static String[] defaultInputIfEmpty(String[] args, String input) {
+        return defaultIfEmpty(args, input.split("\\s+"));
+    }
 }
