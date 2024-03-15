@@ -86,9 +86,9 @@ class SolutionTwoSum {
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(new SolutionTwoSum().twoSum(
+        /*System.out.println(Arrays.toString(new SolutionTwoSum().twoSum(
             new int[]{3, 2, 4}, 5
-        )));
+        )));*/
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
